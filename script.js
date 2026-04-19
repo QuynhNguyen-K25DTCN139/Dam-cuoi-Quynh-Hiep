@@ -134,15 +134,15 @@ createSparkle()
 
 const chibiPositions=[
 
-{top:150,left:46},
-{top:600,left:80},
-{top:1000,left:15},
-{top:1500,left:80},
-{top:1580,left:15},
-{top:2200,left:80},
-{top:2500,left:15},
-{top:2900,left:80},
-{top:2900,left:15}
+{top:150,left:40},
+{top:500,left:40},
+{top:900,left:15},
+{top:1200,left:40},
+{top:1700,left:15},
+{top:1900,left:80},
+{top:1900,left:15},
+{top:2700,left:80},
+{top:2700,left:10}
 
 ]
 
