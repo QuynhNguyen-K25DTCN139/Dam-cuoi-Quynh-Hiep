@@ -40,9 +40,7 @@ heart.innerHTML="❤"
 
 heart.style.left=Math.random()*100+"vw"
 heart.style.fontSize="14px";
-heart.style.animationDuration=(5+Math.random()*4)+"s" //s//
 document.body.appendChild(heart)
-
 setTimeout(()=>heart.remove(),9000)
 
 },1000)
@@ -133,15 +131,8 @@ createSparkle()
 
 const chibiPositions=[
 
-{top:150,left:40},
-{top:500,left:40},
-{top:900,left:15},
-{top:1200,left:40},
-{top:1700,left:15},
-{top:1900,left:80},
-{top:1900,left:15},
-{top:2700,left:80},
-{top:2700,left:10}
+{top:450,left:30},
+{top:155,left:39},
 
 ]
 
