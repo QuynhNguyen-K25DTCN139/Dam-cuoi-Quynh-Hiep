@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thiệp cưới Quỳnh & Hiệp</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- CỬA MỞ THIỆP -->
+
+<div id="gate">
+
+<div class="door left"></div>
+<div class="door right"></div>
+
+<div class="gate-center">
+<div class="hy-image-wrapper">
+<img src="anh chu hy.jpg"class="modern-hy-img">
+</div>
+    
+<h1 class="invitation-title">Thiệp Cưới</h1>
+    
+
+<h1>Thiệp Cưới</h1>
+
+<button onclick="openInvitation()" class="openBtn">
+Mở Thiệp
+</button>
+
+</div>
+</div>
+
+<!-- NHẠC -->
+
+<audio id="music" loop>
+<source src="a thousand years.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">🔊</button>
+
+<!-- FIREWORK -->
+
+<canvas id="fireworks"></canvas>
+
+
+<div class="hy">囍</div>
+
+</div>
+<div class="container">
+
+
+
+    <div class="couple-info">
+        <div class="person">
+            <div class="avatar-frame">
+                <img src="anh co dau.jpg" alt="Cô dâu">
+            </div>
+            <h3>Cô Dâu</h3>
+            <h2>Thúy Quỳnh</h2>
+        </div>
+
+        <div class="heart-icon">❤</div>
+
+        <div class="person">
+            <div class="avatar-frame">
+                <img src="anh chu re.jpg" alt="Chú rể">
+            </div>
+            <h3>Chú Rể</h3>
+            <h2>Quang Hiệp</h2>
+        </div>
+    </div>
+
+<div class="love-story-section">
+    <h2 class="section-title">Hành trình yêu thương</h2>
+    <div class="love-gallery-mini">
+        <div class="love-item-small"><img src="anh yeu 1.jpg" alt="Kỷ niệm 1"></div>
+        <div class="love-item-small"><img src="anh yeu 2.jpg" alt="Kỷ niệm 2"></div>
+    </div>
+
+    <div class="calendar-container reveal">
+        <h3 class="calendar-month">Tháng 10 / 2026</h3>
+        <div class="calendar-grid">
+            <div class="day-name">CN</div><div class="day-name">T2</div><div class="day-name">T3</div>
+            <div class="day-name">T4</div><div class="day-name">T5</div><div class="day-name">T6</div><div class="day-name">T7</div>
+            <span></span><span></span><span></span><span></span>
+            <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+            <div class="wedding-day">10</div> <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+            <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+            <div>29</div><div>30</div><div>31</div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card">
+
+<h2>Trân trọng mời</h2>
+
+<p>Đến chung vui trong ngày trọng đại của chúng tôi</p>
+
+<h2>10 / 10 / 2026</h2>
+
+</div>
+
+
+<div class="card">
+
+<h3>Nhà Cô Dâu</h3>
+
+<p>
+Thôn La Giang - Xã Chí Minh
+<br>
+Thành phố Hải Phòng
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=La+Giang+Chi+Minh+Hai+Phong">
+Xem Google Map
+</a>
+
+
+<h3>Nhà Chú Rể</h3>
+
+<p>
+Thôn 7 - Xã Kiến Quốc
+<br>
+Thành phố Hải Phòng
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Kien+Quoc+Hai+Phong">
+Xem Google Map
+</a>
+
+</div>
+
+<form action="https://docs.google.com/forms/u/0/d/e/https://docs.google.com/forms/d/1KJNrYb5ak6r7zGV026Fev00lwgoMJXV5SWVF9KoDS1E/edit/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+    <div class="card rsvp-section reveal">
+        <div class="rsvp-header">
+            <h2>Xác nhận tham dự</h2>
+            <p>Sự hiện diện của bạn là niềm vinh hạnh của chúng tôi</p>
+        </div>
+        <div class="rsvp-form">
+            <div class="input-group">
+                <label>Họ và Tên</label>
+                <input type="text" name="entry.282762488" placeholder="Nhập tên của bạn..." required>
+            </div>
+            <div class="input-group">
+                <label>Số lượng khách</label>
+                <select name="entry.241283555">
+                    <option value="1 người">1 người</option>
+                    <option value="2 người">2 người</option>
+                    <option value="Đi cùng gia đình">Đi cùng gia đình</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Lời chúc chân thành</label>
+                <textarea name="entry.562922539" placeholder="Gửi lời chúc đến đôi uyên ương..." required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Gửi Lời Chúc</button>
+        </div>
+    </div>
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {alert('Cảm ơn bạn! Lời chúc đã được gửi đến Quỳnh & Hiệp.');}"></iframe>
+<script>var submitted=false;</script>
+
+</div>
+<div class="qr-container">
+        <div class="qr-item">
+            <p class="qr-label">Mừng cưới Cô Dâu</p>
+            <img src="QR code co dau.jpg" class="qr-img">
+        </div>
+        
+        <div class="qr-item">
+            <p class="qr-label">Mừng cưới Chú Rể</p>
+            <img src="QR code chu re.jpg" class="qr-img">
+        </div>
+    </div>
+</div>
+
+<div class="album-section">
+    <h2 class="section-title">Wedding Album</h2>
+    <div class="photo-grid">
+        <div class="photo-item reveal"><img src="anh cuoi 1.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 2.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 3.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 4.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 5.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 6.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 7.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 8.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 9.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 10.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 11.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 12.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 13.jpg"></div>
+        <div class="photo-item reveal"><img src="anh cuoi 14.jpg"></div>
+
+    </div>
+</div>
+<div id="qrModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgFull">
+    <div id="caption"></div>
+    <a id="downloadBtn" download="QR_Mung_Cuoi.jpg" class="download-btn">Tải ảnh về máy</a>
+</div>
+</div>
+
+<!-- CHIBI -->
+
+<div id="chibiContainer"></div>
+
+<script src="script.js"></script>
+<footer style="margin-top: 60px; padding: 40px 20px; color: #800000; background: rgba(255, 255, 255, 0.5); border-top: 1px dashed #800000;">
+    <div style="width: 60px; height: 2px; background: #800000; margin: 0 auto 20px;"></div>
+    <p style="font-family: 'Playfair Display', serif; font-size: 14px; letter-spacing: 3px; margin-bottom: 10px; text-transform: uppercase;">Handcrafted with ❤️ by</p>
+    <h3 style="font-family: 'Great Vibes', cursive; font-size: 35px; margin: 0; font-weight: normal;">Thúy Quỳnh & Quang Hiệp</h3>
+    <p style="font-size: 12px; margin-top: 15px; opacity: 0.7; letter-spacing: 1px;">© 2026 Wedding Celebration</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
