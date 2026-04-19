@@ -39,14 +39,13 @@ heart.className="heart"
 heart.innerHTML="❤"
 
 heart.style.left=Math.random()*100+"vw"
-heart.style.fontSize=(16+Math.random()*18)+"px"
-heart.style.animationDuration=(5+Math.random()*4)+"s"
-
+heart.style.fontSize="14px";
+heart.style.animationDuration=(5+Math.random()*4)+"s" //s//
 document.body.appendChild(heart)
 
 setTimeout(()=>heart.remove(),9000)
 
-},300)
+},1000)
 
 }
 
