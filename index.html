@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thiệp cưới Quỳnh & Hiệp</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- CỬA MỞ THIỆP -->
+
+<div id="gate">
+
+<div class="door left"></div>
+<div class="door right"></div>
+
+<div class="gate-center">
+
+<div class="double-happiness">囍</div>
+
+<h1>Thiệp Cưới</h1>
+
+<button onclick="openInvitation()" class="openBtn">
+Mở Thiệp
+</button>
+
+</div>
+
+</div>
+
+
+<!-- NHẠC -->
+
+<audio id="music" loop>
+<source src="a thousand years.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">🔊</button>
+
+
+<!-- FIREWORK -->
+
+<canvas id="fireworks"></canvas>
+
+
+<div class="container">
+
+<!-- ẢNH CƯỚI -->
+
+<div class="hero">
+<img src="wedding.jpg">
+</div>
+
+
+<div class="names">
+
+<div class="hy">囍</div>
+
+<h1>
+Thúy Quỳnh
+<br>&<br>
+Quang Hiệp
+</h1>
+
+</div>
+
+
+<div class="card">
+
+<h2>Trân trọng mời</h2>
+
+<p>Đến chung vui trong ngày trọng đại của chúng tôi</p>
+
+<h2>10 / 10 / 2026</h2>
+
+</div>
+
+
+<div class="card">
+
+<h3>Nhà Cô Dâu</h3>
+
+<p>
+Thôn La Giang - Xã Chí Minh
+<br>
+Thành phố Hải Phòng
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=La+Giang+Chi+Minh+Hai+Phong">
+Xem Google Map
+</a>
+
+
+<h3>Nhà Chú Rể</h3>
+
+<p>
+Thôn 7 - Xã Kiến Quốc
+<br>
+Thành phố Hải Phòng
+</p>
+
+<a target="_blank"
+href="https://maps.google.com/?q=Kien+Quoc+Hai+Phong">
+Xem Google Map
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>Xác nhận tham dự</h2>
+
+<input placeholder="Tên của bạn">
+<input placeholder="Số lượng khách">
+<textarea placeholder="Lời chúc"></textarea>
+
+<button class="send">Gửi</button>
+
+</div>
+
+</div>
+
+<!-- CHIBI -->
+
+<div id="chibiContainer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
